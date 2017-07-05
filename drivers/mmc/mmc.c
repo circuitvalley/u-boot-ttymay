@@ -853,7 +853,7 @@ int mmc_getcd(struct mmc *mmc)
 			cd = 1;
 	}
 
-	return cd;
+	return !cd;
 }
 #endif
 

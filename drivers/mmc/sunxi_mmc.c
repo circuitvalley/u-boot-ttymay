@@ -444,7 +444,7 @@ static int sunxi_mmc_getcd(struct mmc *mmc)
 	if (cd_pin < 0)
 		return 1;
 
-	return !gpio_get_value(cd_pin);
+	return !gpio_get_value(cd_pin); //was inverted
 }
 
 static const struct mmc_ops sunxi_mmc_ops = {
